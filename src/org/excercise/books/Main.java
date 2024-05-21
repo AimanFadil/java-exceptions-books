@@ -1,6 +1,8 @@
 package org.excercise.books;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -45,7 +47,16 @@ public class Main {
         System.out.println(Arrays.toString(libro));
 
 
+        File file = new File("./src/file/File.txt");
+        System.out.println(file.exists());
 
+        try {
+            FileWriter fileWriter = new FileWriter(file);
+            fileWriter.write(Arrays.toString(libro));
+            fileWriter.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
 
     }

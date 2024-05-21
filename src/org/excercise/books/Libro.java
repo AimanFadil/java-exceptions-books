@@ -24,11 +24,11 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro" +
-                "titolo=" + titolo +
-                ", nPagine=" + nPagine +
-                ", autore=" + autore +
-                ", editore=" + editore
+        return
+                " titolo = " + titolo +
+                ", nPagine = " + nPagine +
+                ", autore = " + autore +
+                ", editor e= " + editore
                 ;
     }
 
